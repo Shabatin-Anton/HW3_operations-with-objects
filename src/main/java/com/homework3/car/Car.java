@@ -1,11 +1,11 @@
-package main.java.com.homework3;
+package main.java.com.homework3.car;
 
 public class Car {
-    public void startCar() {
+    public void start() {
         System.out.println("The car started its engine ");
     }
 
-    public void stopCar() {
+    public void stop() {
         System.out.println("The car turned off the engine");
     }
 
@@ -14,6 +14,6 @@ public class Car {
     }
 
     public void speed(int x) {
-        System.out.println("Car's spedd is : " + x);
+        System.out.println("Car's speed is : " + x);
     }
 }

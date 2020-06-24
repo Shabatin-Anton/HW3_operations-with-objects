@@ -1,10 +1,10 @@
-package main.java.com.homework3;
+package main.java.com.homework3.counter;
 
-public class Add {
+public class Counter {
 
     private static int count;
 
-    public Add() {
+    public Counter() {
         count++;
     }
 
