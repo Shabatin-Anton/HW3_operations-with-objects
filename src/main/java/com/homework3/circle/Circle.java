@@ -5,7 +5,8 @@ public class Circle {
         double area = Math.pow(radius, 2) * Math.PI;
         System.out.println("Area of Circle is : " + area);
     }
-    public static void sphereVol(double radius){
-        System.out.println("Volume of sphere is : " + ((4*Math.PI*Math.pow(radius, 3))/3));
+
+    public static void sphereVol(double radius) {
+        System.out.println("Volume of sphere is : " + ((4 * Math.PI * Math.pow(radius, 3)) / 3));
     }
 }

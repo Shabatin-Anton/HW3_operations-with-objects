@@ -9,13 +9,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
-    public static void main(String[] args) throws IOException, IOException {
+    public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Write radius of circle");
-        double radius = Double.parseDouble(reader.readLine());
-        Circle.circleArea(radius);
-        Circle.sphereVol(radius);
+        try {
+            double radius = Double.parseDouble(reader.readLine());
+            Circle.circleArea(radius);
+            Circle.sphereVol(radius);
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         new Counter();
         new Counter();
